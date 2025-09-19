@@ -1,0 +1,39 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+```{r}
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point(size = 2) +
+  theme_minimal() +
+  labs(title = "Sepal Length vs Sepal Width by Species",
+       x = "Sepal Length (cm)",
+       y = "Sepal Width (cm)")
+
+###X-axis shows sepal length, Y-axis shows sepal width, and colors represent the three iris species.
+
+#Clearly reveals how the species differ in sepal size and shape.
+
+```
+
+```{r}
+
+
+ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(title = "Distribution of Sepal Length by Species",
+       x = "Species",
+       y = "Sepal Length (cm)")
+
+
+#Shows the distribution of sepal length for each species, including median, interquartile range and potential outliers.
+
+#Helps compare central tendency and spread of sepal length across the three species.
+```
+
+```         
+```
